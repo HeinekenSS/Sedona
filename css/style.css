@@ -1,0 +1,244 @@
+*{
+    font-family: 'PT Sans', sans-serif;
+    margin: 0 auto;
+    padding: 0;
+   /* outline: 1px solid black;*/
+}
+header{
+    width: 1280px;
+}
+main{
+    width: 1280px;
+}
+footer{
+    width: 1280px;
+}
+.head-nav{
+    width: 1200px;
+    height: 58px;
+}
+.head-nav a{
+    margin: 0 0 0 73px;
+    padding: 10px;
+    color: #000000;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+}
+.head-nav a:nth-of-type(3){
+    margin: 0 0 0 450px;
+}
+.head-img {
+    position: absolute;
+    width: 137px;
+    height: 70px;
+    margin: 0 0 0 572px;
+    background: url("../img/logo.png") center no-repeat;
+}
+.welcome{
+    position: absolute;
+    width: 190px;
+    height: 46px;
+    margin: 75px 0 0 546px;
+    background: url("../img/welcome.png")center no-repeat;
+}
+.gorgeous {
+    position: absolute;
+    width: 178px;
+    height: 30px;
+    margin: 133px 0 0 553px;
+    background: url("../img/tothegorgeous.png") center no-repeat;
+}
+.sedona{
+     position: absolute;
+     width: 460px;
+     height: 76px;
+     margin: 214px 0 0 411px;
+     background: url("../img/Sedona.png")center no-repeat;
+ }
+.because{
+    position: absolute;
+    width: 296px;
+    height: 80px;
+    margin: 348px 0 0 492px;
+    background: url("../img/becausetheGrand Canyonsucks.png")center no-repeat;
+}
+.img-background{
+    width: 1200px;
+    height: 719px;
+    background: url("../img/backgroundSedona.png") center no-repeat;
+    background-size: cover;
+}
+.decor-background{
+    position: absolute;
+    width: 1200px;
+    height: 60px;
+    margin:  450px 0 0 40px;
+    background: url("../img/decorbackg.png") center no-repeat;
+}
+.causes{
+    position: absolute;
+    width: 1200px;
+    height: 210px;
+    margin:  509px 0 0 40px;
+    background: #ffffff;
+}
+.sedona-causes{
+    width: 576px;
+    height: 100px;
+    margin: 55px auto;
+    text-align: center;
+    text-transform: uppercase;
+}
+.sedona-causes p{
+    margin: 17px 0 0 0;
+}
+.causes-container-one{
+    width: 1200px;
+    display: flex;
+}
+.causes-container-two{
+    width: 1200px;
+    display: flex;
+}
+.blue-block{
+    width: 400px;
+    height: 256px;
+    background: #81b3d2;
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+}
+.blue-block h3{
+    margin: 48px 0 30px 0;
+}
+.blue-block p{
+    margin: 30px 0 0 0;
+    color: #d5e6f0;
+}
+.pic{
+    width: 800px;
+    height: 256px;
+    background: url("../img/photo1.png") center no-repeat;
+    background-size: cover;
+}
+.pic:nth-of-type(1){
+    width: 800px;
+    height: 256px;
+    background: url("../img/photo2.png") center no-repeat;
+    background-size: cover;
+}
+.info-big{
+    width: 400px;
+    height: 330px;
+    text-align: center;
+}
+.info-big p{
+    margin: 30px 0 0 0;
+}
+.icon-one{
+    width: 76px;
+    height: 76px;
+    margin: 60px auto 30px auto;
+    background: url("../img/icon-1.png") center no-repeat;
+}
+.icon-two{
+    width: 76px;
+    height: 76px;
+    margin: 60px auto 30px auto;
+    background: url("../img/icon-2.png") center no-repeat;
+}
+.icon-tree{
+    width: 76px;
+    height: 76px;
+    margin: 60px auto 30px auto;
+    background: url("../img/icon-3.png") center no-repeat;
+}
+.info-small{
+    width: 400px;
+    height: 255px;
+    background: #eeeeee;
+    text-align: center;
+    text-transform: uppercase;
+}
+.info-small h3{
+    margin: 48px 0 30px 0;
+}
+.info-small p{
+    margin: 30px 0 0 0;
+}
+.search-wrap{
+    width: 1200px;
+    padding: 50px 0 0 0;
+}
+.hostel-search{
+    width: 576px;
+    height: 240px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.hostel-search h2{
+    margin: 0 0 38px 0;
+}
+.hostel-search p{
+    margin: 0 0 40px 0;
+}
+button.btn-search{
+    width: 575px;
+    height: 90px;
+    background: #766357;
+    color: #ffffff;
+    font-size: 21px;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+}
+.map{
+    width: 1200px;
+    height: 474px;
+}
+.foot-wrap{
+    display: flex;
+    width: 1200px;
+    height: 120px;
+}
+.social{
+    width: 400px;
+    height: 120px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.social h2{
+    margin: 50px 0 0 0;
+}
+.social span{
+    margin: 50px 0 0 0;
+}
+.social a{
+    margin: 40px 0 0 0;
+    text-decoration: none;
+}
+.social a:last-child(1){
+    margin: 50px 0 0 0;
+}
+.twitter{
+    display: inline-block;
+    width: 43px;
+    height: 43px;
+    background: #81b3d2 url("../img/twitter.png") center no-repeat;
+}
+.facebook{
+    display: inline-block;
+    width: 43px;
+    height: 43px;
+    background: #81b3d2 url("../img/fb.png") center no-repeat;
+}
+.youtube{
+    display: inline-block;
+    width: 43px;
+    height: 43px;
+    background: #81b3d2 url("../img/youtube.png") center no-repeat;
+}
+

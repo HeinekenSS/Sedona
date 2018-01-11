@@ -2,7 +2,7 @@
     font-family: 'PT Sans', sans-serif;
     margin: 0 auto;
     padding: 0;
-   /* outline: 1px solid black;*/
+ /*   outline: 1px solid black;*/
 }
 header{
     width: 1280px;
@@ -11,15 +11,19 @@ main{
     width: 1280px;
 }
 footer{
+    position: relative;
     width: 1280px;
+    background: rgba(255, 255, 255, 0.84);
+}
+button{
+    text-transform: uppercase;
 }
 .head-nav{
+    display: flex;
     width: 1200px;
-    height: 58px;
+    box-shadow: black 0 0 35px 1px;
 }
 .head-nav a{
-    margin: 0 0 0 73px;
-    padding: 10px;
     color: #000000;
     font-size: 14px;
     font-weight: bold;
@@ -27,48 +31,25 @@ footer{
     text-decoration: none;
     cursor: pointer;
 }
+.head-nav a:nth-of-type(1),
+.head-nav a:nth-of-type(2),
+.head-nav a:nth-of-type(4),
+.head-nav a:nth-of-type(5) {
+    padding: 19px 0 19px 0;
+}
 .head-nav a:nth-of-type(3){
-    margin: 0 0 0 450px;
+    margin: 0 0 0 530px;
 }
 .head-img {
     position: absolute;
     width: 137px;
     height: 70px;
-    margin: 0 0 0 572px;
     background: url("../img/logo.png") center no-repeat;
-}
-.welcome{
-    position: absolute;
-    width: 190px;
-    height: 46px;
-    margin: 75px 0 0 546px;
-    background: url("../img/welcome.png")center no-repeat;
-}
-.gorgeous {
-    position: absolute;
-    width: 178px;
-    height: 30px;
-    margin: 133px 0 0 553px;
-    background: url("../img/tothegorgeous.png") center no-repeat;
-}
-.sedona{
-     position: absolute;
-     width: 460px;
-     height: 76px;
-     margin: 214px 0 0 411px;
-     background: url("../img/Sedona.png")center no-repeat;
- }
-.because{
-    position: absolute;
-    width: 296px;
-    height: 80px;
-    margin: 348px 0 0 492px;
-    background: url("../img/becausetheGrand Canyonsucks.png")center no-repeat;
 }
 .img-background{
     width: 1200px;
     height: 719px;
-    background: url("../img/backgroundSedona.png") center no-repeat;
+    background: url("../img/backgroundsedona.jpg") center no-repeat;
     background-size: cover;
 }
 .decor-background{
@@ -173,16 +154,16 @@ footer{
     width: 1200px;
     padding: 50px 0 0 0;
 }
-.hostel-search{
+.hotels-search{
     width: 576px;
     height: 240px;
     text-align: center;
     text-transform: uppercase;
 }
-.hostel-search h2{
+.hotels-search h2{
     margin: 0 0 38px 0;
 }
-.hostel-search p{
+.hotels-search p{
     margin: 0 0 40px 0;
 }
 button.btn-search{
@@ -196,7 +177,6 @@ button.btn-search{
     cursor: pointer;
 }
 .map{
-    width: 1200px;
     height: 474px;
 }
 .foot-wrap{
@@ -213,15 +193,9 @@ button.btn-search{
 .social h2{
     margin: 50px 0 0 0;
 }
-.social span{
-    margin: 50px 0 0 0;
-}
 .social a{
     margin: 40px 0 0 0;
     text-decoration: none;
-}
-.social a:last-child(1){
-    margin: 50px 0 0 0;
 }
 .twitter{
     display: inline-block;
@@ -241,4 +215,199 @@ button.btn-search{
     height: 43px;
     background: #81b3d2 url("../img/youtube.png") center no-repeat;
 }
+.main-hotels{
+    width: 1280px;
+}
+.filter-wrap{
+    display: flex;
+    width: 100%;
+    height: 217px;
+    background: url("../img/filterbackground.png") center no-repeat;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+.filter{
+    width: 150px;
+    height: 165px;
+    margin: 30px 0 0 146px;
+}
+.filter h4{
+    margin: 0 0 25px 0;
+}
+.filter-item{
+    margin: 0 0 25px 0;
+}
+.filter-price{
+    width: 328px;
+    height: 160px;
+    margin: 27px 0 0 253px;
+}
+.range-price{
+    float: left;
+    width: 296px;
+    margin: 15px 0 0 0;
+    padding: 7px;
+    border: 2px solid white;
+}
+.min-price{
+    margin: 0 0 0 60px;
+}
+.max-price{
+    margin: 0 0 0 105px;
+}
+.scale{
+    width: 317px;
+    height: 2px;
+    margin: 70px 0 25px 0;
+    background: #999999;
+}
+.white-scale{
+    float: left;
+    width: 260px;
+    height: 2px;
+    background: #ffffff;
+}
+.circle-min{
+    position: absolute;
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+    margin: -10px 0 0 0;
+    background: #ffffff;
+    cursor: pointer;
+}
+.circle-max{
+    position: absolute;
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+    margin: -10px 0 0 260px;
+    background: #ffffff;
+    cursor: pointer;
+}
+.btn-show{
+    margin: 0 0 0 97px;
+    padding: 10px 36px 10px 36px;
+    border: 2px solid white;
+    background: none;
+    color: #ffffff;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.main-wrap{
+    display: flex;
+    width: 1200px;
+    height: 540px;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.result-search{
+    display: flex;
+    align-items: center;
+    width: 528px;
+    padding: 25px 0 25px 0;
+    text-align: center;
+ }
+.btn-sort{
+    height: 25px;
+    border: none;
+    border-bottom: 1px dashed #81b3d2;
+    background: none;
+    cursor: pointer;
+}
+.result-search-wrap{
+    width: 600px;
+    background: #fefefe;
+ }
+.rating-wrap{
+    width: 600px;
+    background: #fefefe;
+}
+.hotels-wrap{
+    display: flex;
+    height: 150px;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+ }
+.btn-more{
+    padding: 3px 12px 3px 12px;
+    margin: 15px 0 0 0;
+    border: none;
+    background: #81b3d2;
+    cursor: pointer;
+}
+.btn-order{
+    padding: 3px 12px 3px 12px;
+    margin: 15px 0 0 5px;
+    border: none;
+    background: #766357;
+    cursor: pointer;
+}
+.hotel-img-one{
+    width: 135px;
+    height: 90px;
+    margin: 0 30px 0 0;
+    background: url("../img/imghotels1.png") no-repeat;
+}
+.hotel-img-two{
+    width: 135px;
+    height: 90px;
+    margin: 0 30px 0 0;
+    background: url("../img/imghotels2.png") no-repeat;
+}
+.hotel-img-tree{
+    width: 135px;
+    height: 90px;
+    margin: 0 30px 0 0;
+    background: url("../img/imghotels3.png") no-repeat;
+}
+.hotel-info{
+    width: 260px;
+    height: 90px
+}
+.rating{
+    width: 241px;
+    height: 87px;
+    margin: 35px 0 0 288px;
+}
+.stars{
+    width: 241px;
+    height: 20px;
+}
+.rating-score{
+    width: 111px;
+    height: 28px;
+    margin: 0 0 0 150px;
+    background: #f2f2f2;
+}
+.html-academy{
+    width: 205px;
+    margin: 40px auto;
+}
+.stars {
+    direction: rtl;
+    margin: 0 0 45px 0;
+}
+.stars > span {
+    display: inline-block;
+    width: 20px;
+}
+.stars > span:before{
+    content: "\2605";
+    font-size: 20px;
+    color: #81b3d2;
+}
+.wrapper{
+    display: flex;
+    height: 95px;
+    margin: 35px 0 0 50px;
+}
+.sort-arrow{
+    width: 241px;
+    height: 27px;
+    background: #ffcac8;
+}
+
+
+
 

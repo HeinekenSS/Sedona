@@ -2,7 +2,6 @@
     font-family: 'PT Sans', sans-serif;
     margin: 0 auto;
     padding: 0;
- /*   outline: 1px solid black;*/
 }
 header{
     width: 1280px;
@@ -302,6 +301,15 @@ button{
     padding: 7px;
     border: 2px solid white;
 }
+.range-price::before{
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 21px;
+    background: #ffffff;
+    margin: 0 0 0 146px;
+
+}
 .min-price{
     margin: 0 0 0 60px;
 }
@@ -460,6 +468,11 @@ button{
 }
 .hotel-info a{
     margin: 0 0 3px 0;
+    color: #000000;
+    font-size: 21px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 .hotel-info a:hover{
     color: #81b3d2;
@@ -533,7 +546,7 @@ button{
 .shadow-hotels{
     position: absolute;
     width: 1200px;
-    height: 861px;
+    height: 859px;
     margin: 0 0 0 40px;
     box-shadow: rgba(0, 0, 0, 0.36) 0 15px 35px 1px;
     z-index: -1;
@@ -542,7 +555,7 @@ button{
     position: absolute;
     opacity: 0;
     width: 573px;
-    height: 365px;
+    height: 397px;
     margin: 0 0 0 353px;
     font-size: 14px;
     text-transform: uppercase;
@@ -551,31 +564,26 @@ button{
     transition: opacity .3s linear;
 }
 .modal-date:nth-of-type(1){
-    padding: 66px 0 0 50px;
+    padding: 54px 0 0 60px;
 }
 .modal-date:nth-of-type(2){
-    padding: 20px 0 0 50px;
+    padding: 29px 0 0 60px;
 }
-.calendar{
-    width: 345px;
-    height: 38px;
-    background: gold;
-    margin: -27px 0 31px 123px;
-}
-.calendar p {
+.modal-people{
+    display: flex;
     align-items: center;
 }
-.folk{
-    width: 114px;
-    height: 38px;
-    text-align: center;
-    background: gold;
+.modal-people:nth-last-child(1){
+    margin: 0 0 0 56px;
 }
 .wrap-modal{
+    width: 461px;
     display: flex;
+    margin: 29px 0 70px 60px;
 }
-.link-search-modal{;
-    padding: 18px 210px 18px 210px;
+.link-search-modal{
+    margin: 0 0 0 60px;
+    padding: 15px 195px 15px 195px;
     color: #ffffff;
     text-decoration: none;
     font-size: 21px;
@@ -592,4 +600,42 @@ button{
     opacity: 1;
     visibility: visible;
     z-index: 1;
+}
+#lbl1{
+    margin: 0 21px 0 0;
+}
+#lbl2{
+    margin: 0 17px 0 0;
+}
+
+.modal-date>input{
+    padding: 0 0 0 10px;
+    width: 346px;
+    height: 39px;
+    border: none;
+    background: #f2f2f2;
+}
+input[placeholder]{
+    font-size: 14px;
+    font-weight: bold;
+    color: #000000;
+    text-transform: uppercase;
+}
+#number1{
+    margin: 0 -12px 0 35px;
+    padding: 0 0 0 10px;
+    width: 118px;
+    height: 39px;
+    text-align: center;
+    border: none;
+    background: #f2f2f2;
+}
+#number2{
+    margin: 0 0 0 19px;
+    padding: 0 0 0 10px;
+    width: 118px;
+    height: 39px;
+    text-align: center;
+    border: none;
+    background: #f2f2f2;
 }

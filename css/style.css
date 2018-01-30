@@ -149,22 +149,22 @@ button{
     line-height: 20px;
 }
 .icon-one{
-    width: 76px;
-    height: 76px;
+    width: 75px;
+    height: 72px;
     margin: 60px auto 30px auto;
-    background: url("../img/icon-1.png") center no-repeat;
+    background: url("../img/sprite.png") no-repeat -10px -10px;
 }
 .icon-two{
-    width: 76px;
-    height: 76px;
+    width: 74px;
+    height: 70px;
     margin: 60px auto 30px auto;
-    background: url("../img/icon-2.png") center no-repeat;
+    background: url("../img/sprite.png") no-repeat -105px -10px;
 }
 .icon-tree{
-    width: 76px;
+    width: 64px;
     height: 76px;
     margin: 60px auto 30px auto;
-    background: url("../img/icon-3.png") center no-repeat;
+    background: url("../img/sprite.png") no-repeat -10px -102px;
 }
 .info-small{
     width: 400px;
@@ -242,30 +242,37 @@ button{
     display: inline-block;
     width: 43px;
     height: 43px;
-    background: #81b3d2 url("../img/twitter.png") center no-repeat;
+    background: url("../img/sprite.png") no-repeat -185px 2px, #81b3d2;
 }
 .facebook{
     display: inline-block;
     width: 43px;
     height: 43px;
-    background: #81b3d2 url("../img/fb.png") center no-repeat;
+    background: url("../img/sprite.png") no-repeat  -79px -129px, #81b3d2;
 }
 .youtube{
     display: inline-block;
     width: 43px;
     height: 43px;
-    background: #81b3d2 url("../img/youtube.png") center no-repeat;
+    background: url("../img/sprite.png") no-repeat -82px -90px, #81b3d2;
 }
-.twitter:hover,
-.facebook:hover,
+.twitter:hover{
+    background: url("../img/sprite.png") no-repeat -185px 2px, #669ec0;
+}
+.facebook:hover{
+    background: url("../img/sprite.png") no-repeat -79px -129px, #669ec0;
+}
 .youtube:hover{
-    background: #669ec0;
+    background: url("../img/sprite.png") no-repeat -82px -90px, #669ec0;
 }
-.twitter:active,
-.facebook:active,
+.twitter:active{
+    background: url("../img/sprite.png") no-repeat -144px -126px, #5496bd;
+}
+.facebook:active{
+    background: url("../img/sprite.png") no-repeat -111px -129px, #5496bd;
+}
 .youtube:active{
-    background: #5496bd;
-    color: #88b6d1;
+    background: url("../img/sprite.png") no-repeat -122px -90px, #5496bd;
 }
 .main-hotels{
     width: 1280px;
@@ -499,6 +506,11 @@ button{
     width: 205px;
     margin: 40px auto;
 }
+.academy{
+    background-position: -66px -255px ;
+    width: 115px;
+    height: 41px;
+}
 .stars {
     direction: rtl;
     margin: 0 0 45px 0;
@@ -638,4 +650,11 @@ input[placeholder]{
     text-align: center;
     border: none;
     background: #f2f2f2;
+}
+input:hover{
+     background: #ebebeb;
+}
+input:focus{
+    border: 1px #e5e5e5;
+    background: #ffffff;
 }
